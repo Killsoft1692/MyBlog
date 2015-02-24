@@ -1,0 +1,35 @@
+<?php
+
+namespace Killsoft\TigerBundle\Form\Type;
+
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+
+class QuestionType extends AbstractType
+{
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $builder
+            ->add('username', 'text')
+            ->add('phonenumber', 'integer')
+            ->add('mail', 'text')
+            ->add('subject', 'textarea')
+            ->add('save', 'submit', array(
+                'label' => 'add question'
+            ))
+            ->getForm();
+    }
+
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+         $resolver->setDefaults(array(
+            'data_class' => 'Killsoft\TigerBundle\Entity\Question'
+        ));
+    }
+
+    public function getName()
+    {
+        return 'tiger_question';
+    }
+}
