@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        {% block title %}
+            TigerService
+        {% endblock %}
+    </title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('bundles/killsofttiger/css/bootstrap.min.css') }}">
+        <script src="{{ asset('bundles/killsofttiger/js/bootstrap.js') }}"></script>
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+   </head>
+    <div class="bg-warning">
+        <div class="clear-fix" style="margin-inside: auto">
+<body>
+{% block body %}
+    {% block navigation %}
+        <div class="navbar navbar-inverse">
+            <nav class="navbar-inner">
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="#">Service</a>
+                    </li>
+                    <li>
+                        <a href="#">CyberTech</a>
+                    </li>
+                    <li>
+                        <a href="#">Portal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    {% endblock %}
+<img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg') }}" />
+    {#<center>
+        <h1>Welcome to our service!</h1>
+    </center>
+    <br><br>#}
+    <p><h3>You Windows is ill or your device haven't any functions or <br>
+        you don't understand what want you're machine from you? We can help you.</h3>
+   <script>
+       $('.dropdown-toggle').dropdown()
+   </script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle = "dropdown">
+                        Dropdown <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" >
+                        <li class="item1"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
+                        <li class="item2"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
+                        <li class="item3"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
+                        <li class="item4"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
+                        <li><a href="#">Go</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Information about us.</h2>
+    <div class="table-responsive">
+        <table class="table table-condensed">
+            <tr class="success" style="margin-bottom: 100%">
+                Контакты:<td>+36546546456<br>
+                         +35454545454<br>
+                         +35745454545<br>
+                 Адресс: ул. Ярославская 9, офис 10.
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h3>By the way you can leave here your question</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <a href="{{ path('ask') }}"><button type = "button" class="btn btn-success">Ask</button></a>
+        </div>
+
+
+
+    </div>
+{% endblock %}
+{% block javascripts %}
+
+
+{% endblock %}
+</body>
+        </div>
+    </div>
+</html>
