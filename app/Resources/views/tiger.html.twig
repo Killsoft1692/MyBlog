@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" />
     <title>
@@ -10,8 +10,7 @@
 
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('bundles/killsofttiger/css/bootstrap.min.css') }}">
-        {#<script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>#}
-        {#<script type=text/javascript src="{{ asset('bundles/killsofttiger/js/bootstrap.min.js') }}></script>#}
+       <link rel="stylesheet" href="{{ asset('bundles/killsofttiger/css/form.css') }}">
     {% endblock %}
      {% javascripts
            'assets/vendor/jquery/dist/jquery.min.js'
@@ -27,8 +26,8 @@
 {% block body %}
 
     {% block navigation %}
-        <div class="navbar navbar-inverse"">
-            <nav class="navbar-inner">
+        <div class="navbar navbar-inverse" style="background-color:#c67605">
+            <nav class="navbar-header">
                 <ul class="nav nav-pills">
                     <li>
                         <a href="#">Service</a>
@@ -41,45 +40,42 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+    </div>
     {% endblock %}
-<div>
-    <div class="clear-fix" style="margin-inside: auto">
-<img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 1010px"  />
-    {#<center>
-        <h1>Welcome to our service!</h1>
-    </center>
-    <br><br>#}
-    <p><h3>You Windows is ill or your device haven't any functions or <br>
+
+<div style="text-align: center">
+<img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 100%"  />
+</div>
+    <p><h3>You Windows is ill or your device haven't any functions or
         you don't understand what want you're machine from you? We can help you.</h3>
    <script>
        $('.dropdown-toggle').dropdown()
    </script>
 
-  <div style="text-align: center">
+    <div style="text-align: center">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+
+
                 <div class="btn-group">
-                    <button class="btn btn-default dropdown-toggle" data-toggle = "dropdown" style="background-color: #d43f3a">
+                    <button class="btn btn-bg dropdown-toggle" data-toggle = "dropdown" style="background-color: #d43f3a; width: 300px">
                         Choose repair <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" style="background-color: #d43f3a" >
-                        <li class="item1"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
-                        <li class="item2"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
-                        <li class="item3"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
-                        <li class="item4"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
-                        <li><a href="#">Go</a> </li>
+                    <ul class="dropdown-menu" style="background-color: #d43f3a; width: 300px" >
+                        <li class="item1"><a href="#" data-toggle="dropdown" class="dropdown-toggle">PC repair</a> </li>
+                        <li class="item2"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Notebook repair</a> </li>
+                        <li class="item3"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Planshet repair</a> </li>
+                        <li class="item4"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Photo repair</a> </li>
                     </ul>
                 </div>
-            </div>
-        </div>
+         
     </div>
   </div>
+
+
     <h2>Information about us.</h2>
-    <div class="table-responsive">
-        <table class="table table-condensed">
-            <tr class="success" style="margin-bottom: 100%">
+    <div class="table">
+        <table class="table" style="width: 300px " >
+            <tr  style="background-color: aqua">
                 Контакты:<td>+36546546456<br>
                          +35454545454<br>
                          +35745454545<br>
@@ -90,7 +86,7 @@
     </div>
     <h3>By the way you can leave here your question</h3>
     <div class="container-fluid">
-        <div class="row">
+        <div  style="align-content: center">
             <a href="{{ path('ask') }}"><button type = "button" class="btn btn-success">Ask</button></a>
         </div>
 
@@ -103,7 +99,7 @@
 
 
 {% endblock %}
-        </div>
-    </div>
+
+
 </body>
 </html>
