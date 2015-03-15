@@ -3,10 +3,13 @@
 namespace Killsoft\TigerBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class Question
- * @package Killsoft\TigerBundle\Entity
+ * Question
+ *
+ * @ORM\Table()
+ * @ORM\Entity
  */
 class Question
 {
@@ -21,28 +24,31 @@ class Question
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
+     * @Assert\Email()
      * @ORM\Column(name="mail", type="string")
      */
     private $mail;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="username", type="string"
+     * @Assert\NotBlank()
+     * @ORM\Column(name="username", type="string")
      */
     private $username;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="phonenumber", type="integer")
+     * @var string
+     * @Assert\NotBlank()
+     * @Assert\Length(min="10", max="12")
+     * @ORM\Column(name="phonenumber", type="string", length=12)
      */
     private $phonenumber;
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
+     * @Assert\Length(min="10", max="1000")
      * @ORM\Column(name="subject", type="text")
      */
     private $subject;
