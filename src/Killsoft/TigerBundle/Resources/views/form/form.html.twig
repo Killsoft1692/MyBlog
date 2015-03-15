@@ -2,27 +2,32 @@
 
 {% block body %}
 
-<center>
-    <form class="form-horizontal">
-      <div class="clear-fix">
-        <p class="bg-warning"> {{ form_label(form.username, 'username') }} <br>
-            {{ form_widget(form.username)}} <br>
+<div style="text-align: center">
+    {{ form_start(form) }}
+      <div>
+          {{ form_errors(form) }}
+        <p> {{ form_label(form.username, 'username') }}
+            {{ form_widget(form.username)}} </p>
 
-           {{ form_label(form.phonenumber, 'phonenumber') }} <br>
-           {{ form_widget(form.phonenumber)}} <br>
+        <p> {{ form_label(form.phonenumber, 'phonenumber') }}
+            {{ form_widget(form.phonenumber)}} </p>
 
-           {{ form_label(form.mail, 'mail') }} <br>
-           {{ form_widget(form.mail)}} <br>
+        <p>{{ form_label(form.mail, 'mail') }}
+           {{ form_widget(form.mail)}} </p>
 
-           {{ form_label(form.subject, 'subject') }} <br>
-           {{ form_widget(form.subject)}} <br>
+        <p>{{ form_label(form.subject, 'subject') }}
+           {{ form_widget(form.subject)}} </p>
 
-        <br>
-        <button type="button" class="btn-success" {{ form_widget(form.save) }}
-        {{ form_rest(form) }}
+        <p>
+
+            {{ form_widget(form.save) }}
+            {{ form_rest(form) }}
+        </p>
+
       </div>
-    </form>
-</center>
+    {{ form_end(form) }}
+    </div>
+
 
 {% block javascripts %}
 

@@ -12,7 +12,7 @@ class QuestionType extends AbstractType
     {
         $builder
             ->add('username', 'text')
-            ->add('phonenumber', 'integer')
+            ->add('phonenumber')
             ->add('mail', 'text')
             ->add('subject', 'textarea')
             ->add('save', 'submit', array(
@@ -23,8 +23,9 @@ class QuestionType extends AbstractType
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
-         $resolver->setDefaults(array(
-            'data_class' => 'Killsoft\TigerBundle\Entity\Question'
+        $resolver->setDefaults(array(
+            'csrf_protection'   => true,
+            'method' => 'POST'
         ));
     }
 

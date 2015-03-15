@@ -1,0 +1,11 @@
+main:
+     path: /
+     defaults: { _controller: KillsoftTigerBundle:Default:index}
+
+ask:
+     path: /ask
+     defaults: { _controller: KillsoftTigerBundle:Ask:ask}
+
+ok:
+     path: /ask/done
+     defaults: { _controller: KillsoftTigerBundle:Ask:index}

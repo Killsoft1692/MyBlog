@@ -10,17 +10,24 @@
 
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('bundles/killsofttiger/css/bootstrap.min.css') }}">
-        <script src="{{ asset('bundles/killsofttiger/js/bootstrap.js') }}"></script>
+        {#<script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>#}
+        {#<script type=text/javascript src="{{ asset('bundles/killsofttiger/js/bootstrap.min.js') }}></script>#}
     {% endblock %}
+     {% javascripts
+           'assets/vendor/jquery/dist/jquery.min.js'
+           'bundles/killsofttiger/js/bootstrap.min.js'
+        %}
+    <script src="{{ asset_url }}" type="text/javascript"></script>
+    {% endjavascripts %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
    </head>
-    <div class="bg-warning">
-        <div class="clear-fix" style="margin-inside: auto">
-<body>
+
+<body style="height: 100%; background-color: #df8505" >
 {% block body %}
+
     {% block navigation %}
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-inverse"">
             <nav class="navbar-inner">
                 <ul class="nav nav-pills">
                     <li>
@@ -36,7 +43,9 @@
             </nav>
         </div>
     {% endblock %}
-<img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg') }}" />
+<div>
+    <div class="clear-fix" style="margin-inside: auto">
+<img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 1010px"  />
     {#<center>
         <h1>Welcome to our service!</h1>
     </center>
@@ -47,14 +56,15 @@
        $('.dropdown-toggle').dropdown()
    </script>
 
+  <div style="text-align: center">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="btn-group">
-                    <button class="btn btn-default dropdown-toggle" data-toggle = "dropdown">
-                        Dropdown <span class="caret"></span>
+                    <button class="btn btn-default dropdown-toggle" data-toggle = "dropdown" style="background-color: #d43f3a">
+                        Choose repair <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" >
+                    <ul class="dropdown-menu" style="background-color: #d43f3a" >
                         <li class="item1"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
                         <li class="item2"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
                         <li class="item3"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Go</a> </li>
@@ -65,6 +75,7 @@
             </div>
         </div>
     </div>
+  </div>
     <h2>Information about us.</h2>
     <div class="table-responsive">
         <table class="table table-condensed">
@@ -88,6 +99,7 @@
     </div>
 {% endblock %}
 {% block javascripts %}
+
 
 
 {% endblock %}
