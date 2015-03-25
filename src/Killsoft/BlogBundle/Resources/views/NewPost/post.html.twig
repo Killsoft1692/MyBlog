@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="border-r">
+    <p> {{ form_label(form.title, 'title') }} </p>
+    <p> {{ form_widget(form.title)}} </p>
+
+    <p> {{ form_label(form.category, 'category') }} </p>
+    <p> {{ form_widget(form.category)}} </p>
+
+    <p> {{ form_label(form.text, 'text') }} </p>
+    <p> {{ form_widget(form.text)}} </p>
+
+    <p> {{ form_label(form.tags, 'tags') }}</p>
+    <p> {{ form_widget(form.tags)}} </p>
+
+    <p> {{ form_label(form.author, 'author') }}</p>
+    <p> {{ form_widget(form.author)}} </p>
+
+</div>
+<div>
+    <br>
+    {{ form_widget(form.save) }}
+    {{ form_rest(form) }}
+</div>
+
+{% endblock %}
