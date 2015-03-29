@@ -15,28 +15,36 @@
      {% javascripts
            'assets/vendor/jquery/dist/jquery.min.js'
            'bundles/killsofttiger/js/bootstrap.min.js'
+           'bundles/killsofttiger/js/dropdown.js'
         %}
     <script src="{{ asset_url }}" type="text/javascript"></script>
+
+
     {% endjavascripts %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
    </head>
 
-<body style="height: 100%; background-color: #df8505" >
+<body style="height: 100%; background-color: gray;
+        background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+        background-size: 50px 50px;" >
+
 {% block body %}
 
     {% block navigation %}
-        <div class="navbar navbar-inverse" style="background-color:#050505">
+        <div class="navbar navbar-inverse" style=" background-color: gray;
+        background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+        background-size: 50px 50px;" >
             <nav class="navbar-header">
                 <ul class="nav nav-pills">
                     <li>
-                        <a href="#">Service</a>
+                        <a href="#" style="color: #000000">Service</a>
                     </li>
                     <li>
-                        <a href="#">CyberTech</a>
+                        <a href="#" style="color: #000000">CyberTech</a>
                     </li>
                     <li>
-                        <a href="#">Portal</a>
+                        <a href="#" style="color: #000000">Portal</a>
                     </li>
                 </ul>
             </nav>
@@ -50,9 +58,7 @@
     <p><h3>You Windows is ill or your device haven't any functions or
         you don't understand what want you're machine from you? We can help you.</h3>
    <script>
-       $(document).ready(function(){
-           $('.dropdown-toggle').dropdown()
-       }
+
    </script>
 
     <div style="text-align: center">
@@ -64,15 +70,22 @@
                         Choose repair <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu" style="background-color: #e09807; width: 300px">
-                        <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">PC repair</a> </li>
-                        <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">Notebook repair</a> </li>
-                        <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">Planshet repair</a> </li>
-                        <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">Photo repair</a> </li>
+                        <li><a href="#" onmouseover="mopen('m1')"
+                               onmouseout="mclosetime()">PC repair</a> </li>
+                        <li><a href="#" onmouseover="mopen('m1')"
+                               onmouseout="mclosetime()">Notebook repair</a> </li>
+                        <li><a href="#" onmouseover="mopen('m1')"
+                               onmouseout="mclosetime()">Planshet repair</a> </li>
+                        <li><a href="#" onmouseover="mopen('m1')"
+                               onmouseout="mclosetime()">Photo repair</a> </li>
                     </ul>
                 </div>
 
     </div>
   </div>
+
+
+    <div style="clear:both"></div>
 
 
     <h2>Information about us.</h2>
