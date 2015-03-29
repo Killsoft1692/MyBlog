@@ -2,6 +2,31 @@
 
 {% block body %}
 
+    {% block navigation %}
+        <div class="navbar navbar-inverse" style=" background-color: gray;
+background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+background-size: 50px 50px;" >
+            <nav class="navbar-header">
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="#" style="color: #000000">Service</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #000000">CyberTech</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #000000">Portal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        {#{{ knp_menu_render('main') }}#}
+    {% endblock %}
+
+    <div style="text-align: center">
+        <img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 100%; "  />
+    </div>
+
 <div style="text-align: center">
     {{ form_start(form) }}
       <div>
