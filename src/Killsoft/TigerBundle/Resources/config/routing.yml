@@ -1,11 +1,19 @@
 main:
-     path: /
-     defaults: { _controller: KillsoftTigerBundle:Default:index}
+    path: /
+    defaults: { _controller: KillsoftTigerBundle:Default:index}
 
 ask:
-     path: /ask
-     defaults: { _controller: KillsoftTigerBundle:Ask:ask}
+    path: /ask
+    defaults: { _controller: KillsoftTigerBundle:Ask:ask}
 
 ok:
-     path: /ask/done
-     defaults: { _controller: KillsoftTigerBundle:Ask:index}
+    path: /ask/done
+    defaults: { _controller: KillsoftTigerBundle:Ask:index}
+
+recall_done:
+    path: /recall_done
+    defaults: { _controller: KillsoftTigerBundle:Recall:index}
+
+recalls:
+    path: /recalls
+    defaults: { _controller: KillsoftTigerBundle:Recall:recall}

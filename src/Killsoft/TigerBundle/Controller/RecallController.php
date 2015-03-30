@@ -25,7 +25,8 @@ class RecallController extends Controller
         }
 
         return $this->render('KillsoftTigerBundle:recall:form_recall.html.twig', array(
-           'form' => $form->createView()
+           'form' => $form->createView(),
+           'recall' => $recall = $this->getDoctrine()->getRepository('KillsoftTigerBundle:Recall')->findAll()
         ));
     }
 

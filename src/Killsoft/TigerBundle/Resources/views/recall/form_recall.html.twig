@@ -3,19 +3,17 @@
 {% block body %}
 
     {% block navigation %}
-        <div class="navbar navbar-inverse" style=" background-color: gray;
-background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
-background-size: 50px 50px;" >
+        <div class="navbar navbar-inverse" style=" background-color: #050505" xmlns="http://www.w3.org/1999/html">
             <nav class="navbar-header">
                 <ul class="nav nav-pills">
                     <li>
-                        <a href="#" style="color: #000000">Service</a>
+                        <a href="#" style="color: #e09807">Service</a>
                     </li>
                     <li>
-                        <a href="#" style="color: #000000">CyberTech</a>
+                        <a href="#" style="color: #e09807">CyberTech</a>
                     </li>
                     <li>
-                        <a href="#" style="color: #000000">Portal</a>
+                        <a href="#" style="color: #e09807">Portal</a>
                     </li>
                 </ul>
             </nav>
@@ -27,14 +25,14 @@ background-size: 50px 50px;" >
         <img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 100%; "  />
     </div>
 
-    <div style="text-align: center">
+    <div style="text-align: center; color: #e09807">
         {{ form_start(form) }}
         <div>
             {{ form_errors(form) }}
-            <p> {{ form_label(form.name, 'name') }}
+            <p> {{ form_label(form.name, 'Имя')  }}
                 {{ form_widget(form.name)}} </p>
 
-            <p>{{ form_label(form.subject, 'subject') }}
+            <p>{{ form_label(form.subject, 'Отзыв') }}
                 {{ form_widget(form.subject)}} </p>
 
             <p>
@@ -46,5 +44,20 @@ background-size: 50px 50px;" >
         </div>
         {{ form_end(form) }}
     </div>
+
+   <div style="color: #e09807">
+
+       {% for recall in recall %}
+           <ul>
+
+               <p></p><li>{{ recall.name }}</li>
+               <li>{{ recall.subject }}</li></p>
+
+           </ul>
+
+       {% endfor %}
+
+   </div>
+
 
 {% endblock %}

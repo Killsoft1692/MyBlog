@@ -12,9 +12,9 @@ class RecallType extends AbstractType
     {
         $builder
             ->add('name', 'text')
-            ->add('subject', 'text')
+            ->add('subject', 'textarea')
             ->add('save', 'submit', array(
-                'label' => 'add recall'
+                'label' => 'Добавить отзыв'
             ))
             ->getForm();
     }
