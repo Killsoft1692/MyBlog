@@ -17,3 +17,7 @@ recall_done:
 recalls:
     path: /recalls
     defaults: { _controller: KillsoftTigerBundle:Recall:recall}
+
+service:
+    path: /__service__list
+    defaults: { _controller: KillsoftTigerBundle:Service:list}
