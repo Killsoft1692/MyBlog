@@ -1,31 +1,8 @@
 {% extends 'tiger.html.twig' %}
 
-{% block body %}
-
-    {% block navigation %}
-        <div class="navbar navbar-inverse" style=" background-color: #050505" xmlns="http://www.w3.org/1999/html">
-            <nav class="navbar-header">
-                <ul class="nav nav-pills">
-                    <li>
-                        <a href="#" style="color: #e09807">Service</a>
-                    </li>
-                    <li>
-                        <a href="#" style="color: #e09807">CyberTech</a>
-                    </li>
-                    <li>
-                        <a href="#" style="color: #e09807">Portal</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        {#{{ knp_menu_render('main') }}#}
-    {% endblock %}
+{% block input %}
 
     <div style="text-align: center">
-        <img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 100%; "  />
-    </div>
-
-    <div style="text-align: center; color: #e09807">
         {{ form_start(form) }}
         <div>
             {{ form_errors(form) }}
@@ -45,7 +22,7 @@
         {{ form_end(form) }}
     </div>
 
-   <div style="color: #e09807">
+   <div style="color: #e09807; text-align: left">
 
        {% for recall in recall %}
            <ul>

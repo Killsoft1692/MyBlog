@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="keywords" content="tiger сервисный центр ремонт компьютеров ноутбуков планшетов техники"/>
     <title>
         {% block title %}
             TigerService
@@ -25,7 +25,7 @@
 
    </head>
 
-<body style="height: 100%; background-color: #050505" >
+<body>
 
 {% block body %}
 
@@ -34,13 +34,13 @@
             <nav class="navbar-header">
                 <ul class="nav nav-pills">
                     <li>
-                        <a href="#" style="color: #e09807">Service</a>
+                        <a href="#">Service</a>
                     </li>
                     <li>
-                        <a href="#" style="color: #e09807">CyberTech</a>
+                        <a href="#">CyberTech</a>
                     </li>
                     <li>
-                        <a href="#" style="color: #e09807">Portal</a>
+                        <a href="#">Portal</a>
                     </li>
                 </ul>
             </nav>
@@ -50,8 +50,11 @@
 
 <div style="text-align: center">
 <img src="{{ asset('bundles/killsofttiger/images/Di88zLccByQ.jpg')  }}" style="width: 100%; "  />
+
+    {% block input %}
+
 </div>
-    <p><h3 style="color: #e09807">You Windows is ill or your device haven't any functions or
+    <p><h3>You Windows is ill or your device haven't any functions or
         you don't understand what want you're machine from you? We can help you.</h3>
    <script>
 
@@ -65,15 +68,15 @@
                     <button class="css3button dropdown-toggle" data-toggle = "dropdown" style="width: 300px">
                         Choose repair <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu" style="background-color: #e09807; width: 300px">
+                    <ul class="dropdown-menu" role="menu" style="background-color: #ff4800; width: 300px">
                         <li><a href="#" onmouseover="mopen('m1')"
-                               onmouseout="mclosetime()">PC repair</a> </li>
+                               onmouseout="mclosetime()" style="color: #ffffff">PC repair </a> </li>
                         <li><a href="#" onmouseover="mopen('m1')"
-                               onmouseout="mclosetime()">Notebook repair</a> </li>
+                               onmouseout="mclosetime()" style="color: #ffffff">Notebook repair</a> </li>
                         <li><a href="#" onmouseover="mopen('m1')"
-                               onmouseout="mclosetime()">Planshet repair</a> </li>
+                               onmouseout="mclosetime()" style="color: #ffffff">Planshet repair</a> </li>
                         <li><a href="#" onmouseover="mopen('m1')"
-                               onmouseout="mclosetime()">Photo repair</a> </li>
+                               onmouseout="mclosetime()" style="color: #ffffff">Photo repair</a> </li>
                     </ul>
                 </div>
 
@@ -85,12 +88,12 @@
 
 
 
-    <h2 style="color: #e09807">Information about us.</h2>
+    <h2>Information about us.</h2>
 
     <div class="table">
-        <table class="table" style="width: 300px " >
-            <tr  style="background-color: #e09807; border-color: #e09807">
-                <font color="#ff8c00">Контакты:</font> <td>+36546546456<br>
+        <table class="table" style="width: 300px; color: #ffffff " >
+            <tr  style="background-color: #ff4800; border-color: #ff4800">
+                <font color="#ff4800">Контакты:</font> <td>+36546546456<br>
                          +35454545454<br>
                          +35745454545<br>
                  Адресс: ул. Ярославская 9, офис 10.
@@ -102,7 +105,7 @@
 
     </div>
 
-    <h3 style="color: #e09807">By the way you can leave here your question</h3>
+    <h3>By the way you can leave here your question</h3>
 
     <div class="container-fluid">
         <div  style="align-content: center">
@@ -115,7 +118,7 @@
 {% endblock %}
 {% block javascripts %}
 
-
+{% endblock %}
 
 {% endblock %}
 

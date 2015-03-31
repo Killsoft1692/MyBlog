@@ -15,21 +15,21 @@ label {
 button.css3button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
-    color: #2cd145;
+    color: #ffffff;
     padding: 10px 30px;
     background: -moz-linear-gradient(
             top,
-            #e09807 0%,
+            #ff4800 0%,
             #c9ab34 13%,
             #050505 21%,
-            #e8a710 81%,
+            #ff4800 81%,
             #0f0d0e);
     background: -webkit-gradient(
             linear, left top, left bottom,
-            from(#e09807),
-            color-stop(0.13, #c9ab34),
+            from(#ff4800),
+            color-stop(0.13, #ff4800),
             color-stop(0.21, #050505),
-            color-stop(0.81, #e8a710),
+            color-stop(0.81, #ff4800),
             to(#0f0d0e));
     -moz-border-radius: 19px;
     -webkit-border-radius: 19px;
@@ -48,3 +48,13 @@ button.css3button {
     0px -1px 3px rgba(14,64,150,0.8),
     0px 1px 0px rgba(26,176,36,0.3);
 }
+
+body {height: 100% ;background-color: #050505}
+h1 {color: #ff4800}
+h2 {color: #ff4800}
+h3 {color: #ff4800}
+h4 {color: #ff4800}
+a {color: #ff4800}
+
+form {color: #ff4800}
+div.center {text-align: center}
