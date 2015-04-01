@@ -3,10 +3,16 @@
 namespace Killsoft\TigerBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Killsoft\TigerBundle\Entity\Question;
 
+/**
+ * Class ServiceController
+ * @package Killsoft\TigerBundle\Controller
+ */
 class ServiceController extends Controller
 {
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function listAction()
     {
        return $this->render('KillsoftTigerBundle:service:service.html.twig', array(

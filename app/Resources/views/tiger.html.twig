@@ -69,13 +69,13 @@
                         Choose repair <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu" style="background-color: #ff4800; width: 300px">
-                        <li><a href="#" onmouseover="mopen('m1')"
+                        <li><a href="{{ path('pc') }}" onmouseover="mopen('m1')"
                                onmouseout="mclosetime()" style="color: #ffffff">PC repair </a> </li>
-                        <li><a href="#" onmouseover="mopen('m1')"
+                        <li><a href="{{ path('note') }}" onmouseover="mopen('m1')"
                                onmouseout="mclosetime()" style="color: #ffffff">Notebook repair</a> </li>
-                        <li><a href="#" onmouseover="mopen('m1')"
+                        <li><a href="{{ path('pda') }}" onmouseover="mopen('m1')"
                                onmouseout="mclosetime()" style="color: #ffffff">Planshet repair</a> </li>
-                        <li><a href="#" onmouseover="mopen('m1')"
+                        <li><a href="{{ path('photo') }}" onmouseover="mopen('m1')"
                                onmouseout="mclosetime()" style="color: #ffffff">Photo repair</a> </li>
                     </ul>
                 </div>
@@ -86,11 +86,9 @@
 
     <div style="clear:both"></div>
 
-
-
     <h2>Information about us.</h2>
 
-    <div class="table">
+    <div id="table" class="table">
         <table class="table" style="width: 300px; color: #ffffff " >
             <tr  style="background-color: #ff4800; border-color: #ff4800">
                 <font color="#ff4800">Контакты:</font> <td>+36546546456<br>
@@ -101,7 +99,9 @@
             </tr>
         </table>
     </div>
-    <div style="text-align: right">
+    <div id="recall" style="text-align: right">
+
+            <a href="{{ path('recalls') }}"><button type= "button" class="css3button">Comments</button> </a>
 
     </div>
 

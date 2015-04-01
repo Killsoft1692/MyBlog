@@ -21,3 +21,19 @@ recalls:
 service:
     path: /__service__list
     defaults: { _controller: KillsoftTigerBundle:Service:list}
+
+pc:
+    path: /pc_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:pc}
+
+note:
+    path: /note_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:notebook}
+
+pda:
+    path: /pda_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:pda}
+
+photo:
+    path: /photo_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:photo}
