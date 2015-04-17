@@ -1,0 +1,40 @@
+{% extends 'tiger.html.twig' %}
+
+{% block input %}
+
+    <div style="text-align: center">
+        {{ form_start(form) }}
+        <div>
+            {{ form_errors(form) }}
+            <p> {{ form_label(form.name, 'Имя')  }}
+                {{ form_widget(form.name)}} </p>
+
+            <p>{{ form_label(form.subject, 'Отзыв') }}
+                {{ form_widget(form.subject)}} </p>
+
+            <p>
+
+                {{ form_widget(form.save) }}
+                {{ form_rest(form) }}
+            </p>
+
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+   <div style="color: #e09807; text-align: left">
+
+       {% for recall in recall %}
+           <ul>
+
+               <p></p><li>{{ recall.name }}</li>
+               <li>{{ recall.subject }}</li></p>
+
+           </ul>
+
+       {% endfor %}
+
+   </div>
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+button.css3button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #ffffff;
+    padding: 10px 30px;
+    background: -moz-linear-gradient(
+            top,
+            #ff4800 0%,
+            #c9ab34 13%,
+            #050505 21%,
+            #ff4800 81%,
+            #0f0d0e);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#ff4800),
+            color-stop(0.13, #ff4800),
+            color-stop(0.21, #050505),
+            color-stop(0.81, #ff4800),
+            to(#0f0d0e));
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+    border: 1px solid #6e460a;
+    -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 5px rgba(161,142,016,0.6);
+    -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 5px rgba(161,142,016,0.6);
+    box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 5px rgba(161,142,016,0.6);
+    text-shadow:
+    0px -1px 3px rgba(14,64,150,0.8),
+    0px 1px 0px rgba(26,176,36,0.3);
+}
+
+body {height: 100% ;background-color: #050505}
+h1 {color: #ff4800}
+h2 {color: #ff4800}
+h3 {color: #ff4800}
+h4 {color: #ff4800}
+a {color: #ff4800}
+
+form {color: #ff4800}
+div.center {text-align: center}
+li {color: #ff4800}

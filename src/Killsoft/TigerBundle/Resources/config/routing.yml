@@ -1,0 +1,39 @@
+main:
+    path: /
+    defaults: { _controller: KillsoftTigerBundle:Default:index}
+
+ask:
+    path: /ask
+    defaults: { _controller: KillsoftTigerBundle:Ask:ask}
+
+ok:
+    path: /ask/done
+    defaults: { _controller: KillsoftTigerBundle:Ask:index}
+
+recall_done:
+    path: /recall_done
+    defaults: { _controller: KillsoftTigerBundle:Recall:index}
+
+recalls:
+    path: /recalls
+    defaults: { _controller: KillsoftTigerBundle:Recall:recall}
+
+service:
+    path: /__service__list
+    defaults: { _controller: KillsoftTigerBundle:Service:list}
+
+pc:
+    path: /pc_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:pc}
+
+note:
+    path: /note_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:notebook}
+
+pda:
+    path: /pda_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:pda}
+
+photo:
+    path: /photo_repair
+    defaults: { _controller: KillsoftTigerBundle:Price:photo}

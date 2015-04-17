@@ -1,0 +1,5 @@
+killsoft_tiger:
+    resource: "@KillsoftTigerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

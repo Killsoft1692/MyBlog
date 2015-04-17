@@ -1,0 +1,31 @@
+{% extends 'tiger.html.twig' %}
+
+{% block input %}
+
+<div style="text-align: center">
+    {{ form_start(form) }}
+      <div>
+          {{ form_errors(form) }}
+        <p> {{ form_label(form.username, 'username') }}
+            {{ form_widget(form.username)}} </p>
+
+        <p> {{ form_label(form.phonenumber, 'phonenumber') }}
+            {{ form_widget(form.phonenumber)}} </p>
+
+        <p>{{ form_label(form.mail, 'mail') }}
+           {{ form_widget(form.mail)}} </p>
+
+        <p>{{ form_label(form.subject, 'subject') }}
+           {{ form_widget(form.subject)}} </p>
+
+        <p>
+
+            {{ form_widget(form.save) }}
+            {{ form_rest(form) }}
+        </p>
+
+      </div>
+    {{ form_end(form) }}
+    </div>
+
+{% endblock %}
